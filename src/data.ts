@@ -1,3 +1,5 @@
+// Everything personal in the game comes from this file. Paths are relative (no leading slash) so the
+// game also works when it is hosted in a sub-folder, like /play/slice/ on the main portfolio.
 // Everything personal in the game comes from this file. It mirrors the content of the main portfolio
 // (Chrome-portfolio/src/data/profile.ts and projects.ts); update both when something changes.
 
@@ -34,8 +36,8 @@ export const profile = {
     email: 'arnoboenders@gmail.com',
     linkedin: 'https://www.linkedin.com/in/arno-boenders-816117228/',
     github: GH,
-    photo: '/arno-portrait.jpg',
-    cv: '/Arno-Boenders-CV.pdf',
+    photo: 'arno-portrait.jpg',
+    cv: 'Arno-Boenders-CV.pdf',
     openToWork: true,
     bio:
         'I’m a fullstack developer from Ghent, Belgium. Since September 2025 I work at Realo, part of Immoweb, across PHP, MySQL and the new Next.js and TypeScript front end. ' +
@@ -88,7 +90,7 @@ export const projects: Project[] = [
             'It also works as a remote MCP server, so Claude can create polls and read results from a chat.',
         tech: ['Next.js', 'Cloudflare Workers', 'Postgres', 'Drizzle', 'MCP'],
         live: 'https://usepickly.com',
-        image: '/projects/pickly.jpg',
+        image: 'projects/pickly.jpg',
         position: '50% 50%',
         color: '#2bb6a3',
     },
@@ -100,7 +102,7 @@ export const projects: Project[] = [
         description:
             'It pulls transactions over PSD2 through Enable Banking into a SQLite file on your own machine, sorts them with rules plus AI suggestions from Claude, and shows budgets, savings, subscriptions and where to cut.',
         tech: ['Next.js', 'Electron', 'Node.js', 'SQLite', 'Claude'],
-        image: '/projects/munto.jpg',
+        image: 'projects/munto.jpg',
         position: '0% 0%',
         color: '#8a5cf5',
     },
@@ -113,7 +115,7 @@ export const projects: Project[] = [
             'Pages open in tabs, the address bar searches, results pages are filled with project data pulled live from the GitHub API, and a few searches set off easter eggs.',
         tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
         repo: `${GH}/Chrome-portfolio`,
-        image: '/projects/chrome-portfolio.jpg',
+        image: 'projects/chrome-portfolio.jpg',
         position: '0% 0%',
         color: '#4c8dff',
     },
@@ -127,7 +129,7 @@ export const projects: Project[] = [
         tech: ['React', 'GraphQL', 'Hygraph', 'Material UI'],
         live: 'https://wings-of-belgium.onrender.com/',
         repo: `${GH}/wings-of-belgium`,
-        image: '/projects/wings-of-belgium.jpg',
+        image: 'projects/wings-of-belgium.jpg',
         position: '50% 0%',
         color: '#f29d38',
     },
@@ -139,7 +141,7 @@ export const projects: Project[] = [
         tech: ['JavaScript', 'HTML', 'CSS'],
         live: 'https://pgmgent-atwork2.github.io/project-1-workshop-start-2-code-daria-arno/',
         repo: `${GH}/Flappy-teachers`,
-        image: '/projects/flappy-teachers.jpg',
+        image: 'projects/flappy-teachers.jpg',
         position: '50% 45%',
         color: '#38bdf8',
     },
@@ -150,7 +152,7 @@ export const projects: Project[] = [
         description:
             'It grew into a game with objectives, activities and scenic viewpoints to explore. Built with C# and the XR Interaction Toolkit; assets from the Unity Asset Store plus some modelled in Blender.',
         tech: ['Unity', 'C#', 'XR Toolkit', 'Blender'],
-        image: '/projects/kamperen-in-vr.jpg',
+        image: 'projects/kamperen-in-vr.jpg',
         position: '50% 30%',
         color: '#5fb85a',
     },
@@ -170,7 +172,7 @@ export const projects: Project[] = [
         description: 'UX Prototyping school project: rebuilding a given agency design as faithfully as possible as a static site.',
         tech: ['Eleventy', 'Nunjucks', 'Markdown', 'CSS'],
         repo: `${GH}/Clean`,
-        image: '/projects/studio-clean.jpg',
+        image: 'projects/studio-clean.jpg',
         position: '0% 0%',
         color: '#e879a6',
     },
