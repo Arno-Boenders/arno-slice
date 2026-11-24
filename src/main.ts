@@ -226,8 +226,9 @@ function sliceRings(a: Point, b: Point) {
 
 function onMove(e: PointerEvent) {
     if (paused) return;
-    // With a mouse you slice by dragging, so simply moving towards a button never cuts anything.
-    if (e.pointerType === 'mouse' && !(e.buttons & 1)) { trail = []; return; }
+    // While playing, a mouse slices just by moving. On the start and game-over screens it has to drag,
+    // so moving towards a button or link never starts a round by accident.
+    if (e.pointerType === 'mouse' && !(e.buttons & 1) && mode !== 'play') { trail = []; return; }
     const coalesced = e.getCoalescedEvents?.();
     for (const ev of coalesced?.length ? coalesced : [e]) {
         const p = { x: ev.clientX, y: ev.clientY, t: ev.timeStamp };
